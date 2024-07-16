@@ -1,0 +1,82 @@
+body{
+   font-family: "Comfortaa", sans-serif;
+background-color: #272b30;
+
+}
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+.navbar img {
+    width: 40px;
+}
+.nav-bg{
+    background-color: rgb(58, 73, 123) !important;
+    margin-top: -30px !important;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    
+}
+.collapse ul li a{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+.navbar-nav .nav-link.active{
+    color: #09c !important;
+}
+.main .card:hover {
+   transform: scale(1.05);
+   filter: grayscale(0);
+}
+.main .card {
+   filter: grayscale(0.7);
+   transition: transform 0.5s, filter 0.5s 0.1s;
+background-color: #272b30;
+
+}
+.badge-color {
+    background-color: #32383e;
+}
+.loading{
+        position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

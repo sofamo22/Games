@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="games ">
+        <header>
+            <img src="./imgs/wraper.png" class="w-100" alt="wraper">
+        </header>
+        <nav class="navbar z-3 navbar-expand-lg nav-bg position-sticky top-0 col-md-6 col-lg-9 m-auto rounded-4">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="./imgs/logo-sm.png" alt="logo">GAME REVIEWS</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class=" text-white nav-link text-uppercase active" href="#"
+                                aria-current="page">mmorpg</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class="text-white nav-link" href="#">shooter</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class="text-white nav-link" href="#">sailing</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class=" text-white nav-link" href="#">permadeath</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class=" text-white nav-link" href="#">superhero</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class=" text-white nav-link" href="#">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="main my-5 position-relative">
+            <div class="container">
+                <div class="row" id="gameData">
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <section class="details d-none " id="gameDetails">
+        <div class="container">
+            <header class="hstack justify-content-between">
+                <h1 class="text-center text-white h3 py-4">Details Game</h1>
+                <button class="btn-close btn-close-white" id="btnClose"></button>
+            </header>
+            <div class="row" id="rowBody">
+
+            </div>
+        </div>
+    </section>
+    <div class=" loading"> <span class="loader"></span>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+
+
+</body>
+
+</html>
